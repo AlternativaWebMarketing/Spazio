@@ -1,0 +1,99 @@
+.contact
+    background-color: $cinza1
+    padding: 120px 0
+    .subcontainer
+        width: 85%
+        margin: 0 auto
+    @include mobile(0px, 767px)
+        .subcontainer
+            width: 100%
+            margin: 0 auto
+    h3
+        +titulo-h3
+    section
+        @include mobile(0px, 767px)
+            padding: 0 25px
+            max-width: 100%
+        margin: 0
+    .contactform
+        padding-top: 15px
+        background-color: $vermelho-padrao
+        float: left
+        width: 60%
+        @include mobile(0px, 767px)
+            width: 100%
+        display: block
+        height: 500px
+        form
+            .form
+                position: relative
+                display: block
+                padding: 15px
+                label
+                    letter-spacing: 1px
+                    +raleway
+                    letter-spacing: 2px
+                    font-size: 10pt
+                    color: $cinza2
+                    text-transform: uppercase
+                    font-weight: lighter
+                    position: absolute
+                    // top: 15px
+                    left: 50px
+                input[type='text']
+                    +raleway
+                    color: $cinza2
+                    outline: none
+                    border: none
+                    border-bottom: 1px solid $cinza2
+                    background: none
+                    width: 90%
+                    margin: 5px auto
+                    display: block
+            textarea
+                display: block
+                +raleway
+                color: $cinza2
+                height: 150px
+                width: 85%
+                resize: none
+                border: none
+                border-bottom: 1px solid $cinza2
+                background: none
+                outline: none
+                margin: 0 auto
+            input[type='submit']
+                -webkit-appearance: button
+                cursor: pointer
+                border: 1px solid #fff
+                background-color: $vermelho-padrao
+                color: #fff
+                padding: 10px 15px
+                font-size: 10pt
+                outline: none
+                display: table
+                position: relative
+                top: 15px
+                left: 47px
+                @include mobile(0px, 767px)
+                    left: 50%
+                    transform: translatex(-50%)
+    aside.contactlist
+        padding: 0 25px
+        max-width: 40%
+        float: right
+        @include mobile(0px, 767px)
+            padding: 0
+            max-width: 100%
+        p
+            +raleway
+            line-height: 2
+        h5
+            +raleway
+        .fa
+            background-color: $vermelho-padrao
+            width: 45px
+            height: 45px
+            padding-top: 15px
+            text-align: center
+            color: $cinza1

@@ -1,0 +1,99 @@
+//footer
+footer
+    clear: both
+    height: 180px
+    width: 100%
+    position: relative
+    background-color: $vermelho-padrao
+    @include mobile(0px, 767px)
+
+    .logo-footer
+        display: block
+        max-width: 13%
+        top: 65px
+        transform: translateX(-50%)
+        left: 50%
+        position: absolute
+    .footer-msg
+        display: block
+        position: absolute
+        color: #cdcdcd
+        left: 50%
+        transform: translateX(-50%)
+        top: 110px
+        font-size: 9pt
+    .footer-contact
+        display: block
+        position: absolute
+        left: 70px
+        top: 64px
+        .fa,
+        p
+            color: $cinza2
+            +raleway
+            font-size: 12px
+            letter-spacing: 2px
+        .fa
+            font-size: 11px
+            margin-right: 18px
+            height: 17px
+            width: 17px
+            background-color: $cinza2
+            border-radius: 20%
+            padding-left: 3px
+            color: $vermelho-padrao
+            padding-top: 3px
+        .fa-phone
+            padding-left: 4px !important
+    .footer-social
+        display: block
+        right: 70px
+        top: 64px
+        position: absolute
+        ul
+            a
+                li
+                    display: inline-block
+                    .fa
+                        font-size: 16px
+                        height: 20px
+                        width: 20px
+                        margin-left: 10px
+                        background-color: $cinza2
+                        border-radius: 25%
+                        padding-left: 3px
+                        color: $vermelho-padrao
+                        padding-top: 2px
+
+@include mobile(0px, 767px)
+    footer
+        height: 330px
+        padding-top: 50px
+        width: 100%
+        .footer-contact
+            display: table
+            position: absolute
+            text-align: center
+            left: 50%
+            transform: translateX(-50%)
+        .logo-footer
+            display: block
+            max-width: 40%
+            top: 150px
+            transform: translateX(-50%)
+            left: 50%
+            position: absolute
+        .footer-msg
+            top: 180px
+            letter-spacing: 2px
+            width: 70%
+            text-align: center
+            display: inline-block
+            left: 50%
+            transform: translateX(-50%)
+        .footer-social
+            display: table
+            position: absolute
+            top: 240px
+            left: 50%
+            transform: translateX(-50%)

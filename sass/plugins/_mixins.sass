@@ -1,0 +1,26 @@
+// media-queries
+@mixin mobile($min, $max)
+  @include mq($media-type: 'all', $min-width: $min, $max-width: $max)
+    @content
+
+
+// FONTS
+=raleway
+    @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700')
+    font-family: 'Raleway', sans-serif
+=titulo-h3
+    @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700')
+    font-family: 'Raleway', sans-serif
+    text-align: center
+    +raleway
+    font-weight: bolder
+    text-transform: uppercase
+    letter-spacing: 2
+    font-size: 30px
+    margin-bottom: 87px
+
+// CORES
+$cinza1: #ebebeb
+$cinza2: #cdcdcd
+$vermelho-padrao: #872F31
+$vermelho2: #541d1f

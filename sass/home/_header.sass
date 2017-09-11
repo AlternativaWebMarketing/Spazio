@@ -1,0 +1,152 @@
+// header
+header
+    position: relative
+    z-index: 6
+    .navbar
+        clear: both
+        position: fixed
+        height: 50px
+        width: 100%
+        .navbg
+            top: -1px
+            left: -1px
+            width: 101%
+            height: 71px
+            background-color: $vermelho-padrao
+            position: absolute
+        h1
+            img
+                z-index: 10
+                max-width: 15%
+                display: table
+                position: absolute
+                left: 25px
+                top: 15px
+        @include mobile(0px, 767px)
+            .navbg
+                top: -1px
+                left: -1px
+                width: 101%
+                height: 71px
+                position: fixed
+            h1
+                img
+                    z-index: 10
+                    max-width: 35%
+                    display: table
+                    position: absolute
+                    left: 25px
+                    top: -20px
+            .home-menu
+                position: absolute
+                display: block
+                top: 20px
+                height: 50px
+                top: -50px
+                i
+                    position: absolute
+                    display: table
+                    color: #fff
+                    top: 0
+
+
+        .home-menu
+            position: relative
+            .fa-navicon
+                display: none
+            ul
+                position: absolute
+                display: block
+                right: 25px
+                top: 5px
+                li
+                    position: relative
+                    display: inline-block
+                    margin: 0 10px
+                    a
+                        +raleway
+                        text-transform: uppercase
+                        text-decoration: none
+                        color: #fff
+                        font-size: 8pt
+                    .span-top
+                        display: block
+                        position: absolute
+                        height: 1px
+                        width: 0
+                        top: 0
+                        background-color: #fff
+                        transition: .5s
+                        float: right
+
+                    .span-bottom
+                        display: block
+                        position: absolute
+                        height: 1px
+                        width: 0
+                        bottom: 0
+                        background-color: #fff
+                        transition: .5s
+                        right: 0
+                .link-hover
+                        .span-top
+                            display: block
+                            position: absolute
+                            height: 1px
+                            width: 100%
+                            background-color: #fff
+                            transition: .5s
+                            float: right
+
+                        .span-bottom
+                            display: block
+                            position: absolute
+                            height: 1px
+                            width: 100%
+                            bottom: 0
+                            background-color: #fff
+                            transition: .5s
+                            right: 0
+
+
+            @include mobile(0px, 767px)
+                .fa-navicon
+                    position: absolute
+                    display: table
+                    right: 25px
+                    top: 15px
+                ul
+                    display: none
+                .nav-menu
+                    padding-top: 50px
+                    position: fixed
+                    bottom: 0
+                    left: -1px
+                    background-color: $vermelho-padrao
+                    height: 90vh
+                    width: calc(100% + 1px)
+                    z-index: 10
+                    ul
+                        display: block
+                        position: absolute
+                        width: 95%
+                        left: 0
+                        padding-top: 40%
+
+                        li
+                            color: #fff
+                            display: block
+                            width: 100%
+                            text-align: center
+                            padding: 25px 0
+                            a
+                                padding: 0 25px
+
+    .header-background
+        height: 100vh
+        width: 100%
+        background: url('../img/bg.jpg')
+        background-attachment: fixed
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover

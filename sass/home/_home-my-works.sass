@@ -1,0 +1,44 @@
+.my-works
+    background-color: $cinza2
+    padding: 120px 0
+    h3
+        +titulo-h3
+    .items
+        +flexbox
+        +make-row
+        text-align: center
+        +align-items(center)
+        +justify-content(space-around)
+        [class^="icon"]
+            padding:  30px 25px
+            width: 150px
+            border: 1px solid #000
+            transition: .5s
+            .fa
+                font-size: 35px
+        [class^="icon"]:hover
+            cursor: pointer
+            padding:  30px 25px
+            width: 150px
+            border: 1px solid #868686
+            color: #868686
+            transition: .5s
+            transform: scale(1.1)
+    @include mobile(0px, 767px)
+        .items
+            display: inline-block
+            [class^="icon"]
+                padding: 30px 25px
+                width: 95%
+                margin: 0 auto
+                transition: .5s
+                border: 1px solid #000
+                margin-top: 5px
+            [class^="icon"]:hover
+                cursor: pointer
+                padding:  30px 25px
+                width: 95%
+                border: 1px solid #868686
+                color: #868686
+                transition: .5s
+                transform: scale(1.05)

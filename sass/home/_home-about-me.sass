@@ -1,0 +1,62 @@
+.profile
+    position: relative
+    padding: 120px 0
+    background-color: #fff
+    h3
+        font-family: 'Raleway', sans-serif
+        text-align: center
+        font-family: 'Raleway', sans-serif
+        font-weight: bolder
+        text-transform: uppercase
+        letter-spacing: 2
+        font-size: 30px
+        margin-bottom: 87px
+    .profile-text
+        display: block
+        max-width: 50%
+        float: left
+        margin: 0
+        p
+            +raleway
+            line-height: 2
+    .profile-img
+        display: block
+        float: right
+        width: 45%
+        figure
+            img
+                max-width: 100%
+
+    .btn
+        padding: 10px 25px
+        border: 1px solid $vermelho-padrao
+        border-radius: 0
+        background: none
+        position: relative
+        display: table
+        margin: 0 auto
+        transition: .8s
+        font-size: 8pt
+        +raleway
+        color: #000
+        text-decoration: none
+        text-transform: uppercase
+        letter-spacing: 2px
+        cursor: pointer
+    .btn:hover
+        transition: .8s
+        border: 1px solid $vermelho-padrao
+        color: #fff
+        background-color: $vermelho-padrao
+
+    @include mobile(0px, 767px)
+        .profile-text
+            max-width: 100%
+            margin: 0
+            margin-top: 35px
+        .profile-img
+            display: block
+            width: 100%
+            figure
+                img
+                    max-width: 100%

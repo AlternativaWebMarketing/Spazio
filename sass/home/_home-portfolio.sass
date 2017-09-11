@@ -1,0 +1,44 @@
+//portfolio
+.portfolio
+    padding: 120px 0
+    background-color: #fff
+    h3
+        +titulo-h3
+    ul
+        +clearfix
+        +make-row
+        li
+            margin-bottom: 23px
+            position: relative
+            list-style: none
+            +make-sm-column(3)
+            +make-xs-column(6)
+            position: relative
+            figure
+                img
+                    +img-responsive
+                a
+                    h4, p
+                        text-align: center
+    .portfolio-btn
+        padding: 10px 25px
+        border: 1px solid $vermelho-padrao
+        border-radius: 0
+        background: none
+        position: relative
+        display: table
+        margin: 0 auto
+        transition: .8s
+        font-size: 8pt
+        +raleway
+        color: #000
+        text-decoration: none
+        text-transform: uppercase
+        letter-spacing: 2px
+        cursor: pointer
+
+    .portfolio-btn:hover
+        transition: .8s
+        border: 1px solid $vermelho-padrao
+        color: #fff
+        background-color: $vermelho-padrao

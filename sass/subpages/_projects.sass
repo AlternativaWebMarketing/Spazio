@@ -1,0 +1,59 @@
+.content
+    max-width: 1200px;
+    padding-top: 110px
+    margin: 0 auto
+    display: block
+    nav
+        display: table
+        position: relative
+        margin: 0 auto
+        ul
+            display: block
+            height: 50px
+            width: 100%
+            li
+                position: relative
+                margin: 0 20px
+                display: inline-block
+                a
+                    text-transform: uppercase
+                    text-decoration: none
+                    +raleway
+                    color: #000
+                    span
+                        display: block
+                        position: absolute
+                        height: 1px
+                        left: -10px
+                        width: 0
+                        background-color: #000
+                        transition: .5s
+            .link-selected
+                span
+                    display: block
+                    position: absolute
+                    height: 1px
+                    width: calc(100% + 20px)
+                    left: -10px
+                    background-color: #000
+                    transition: .5s
+
+
+    ul.portfolio
+        position: relative
+        left: 4px
+        +clearfix
+        +make-row
+        li
+            margin-bottom: 23px
+            position: relative
+            list-style: none
+            +make-sm-column(3)
+            +make-xs-column(6)
+            position: relative
+            figure
+                img
+                    +img-responsive
+                a
+                    h4, p
+                        text-align: center
